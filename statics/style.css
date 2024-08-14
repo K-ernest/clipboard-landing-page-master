@@ -1,1 +1,100 @@
+* {
+    box-sizing: border-box;
+     } 
+ 
+ /* body div  */ 
+.B-div{
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ font-family: "Red Hat Display", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 3;
+ font-style: normal;
+}  
+/*  */
+
+/*  */
+h1{
+  text-align: center;
+  
+}
+/*  */
+
+/* computer images */
+.C-img{
+  width: 100%;
+}  
+ /*  */ 
+ 
+/* div for ios download starts.. */
+.Dios{
+ background-color: hsl(171, 66%, 44%);
+ color: white;
+ width: 80%;
+ padding: 15px;
+ margin: 10px 0px;
+ border: 0px;
+ border-radius: 25px 25px 25px 25px;
+ box-shadow: inset hsl(224, 23%, 55%); 
+ box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2); 
+ text-align: center;            
+}
+
+.Dios:hover {
+  background-color: hsl(165, 60%, 38%);
+}
+/*  div for ios download ends */
+
+
+
+
+/* div for mac download starts... */
+
+.Dmac{
+ background-color: hsl(233, 100%, 69%);
+ color: white;
+ width: 80%;
+ padding: 15px;
+ margin: 10px 0px;
+ border: 0px;
+ border-radius: 25px 25px 25px 25px;
+ box-shadow: inset hsl(224, 23%, 55%); 
+ box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2); 
+ text-align: center;         
+}
+
+.Dmac:hover {
+  background-color: hsl(244, 111%, 80%);
+}
+/*  div for mac download ends*/
+
+
+/* footer */
+
+footer{
+ background-color: ghostwhite;
+ text-decoration: none;
+}
+
+.F-info > img{
+  width: 50px;
+  margin: 20px;
+}
+
+.F-info{
+ display: flex;
+ flex-direction: column; 
+ align-items: center;  
+ justify-content: space-evenly;
+}
+
+.F-logo{
+ display: flex;
+ align-items: center;
+ flex-direction: row; 
+ justify-content: space-evenly;
+}
+
+/* footer ends ...   */
 
