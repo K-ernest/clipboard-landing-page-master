@@ -1,100 +1,293 @@
 * {
-    box-sizing: border-box;
-     } 
- 
- /* body div  */ 
-.B-div{
- align-items: center;
- display: flex;
- flex-direction: column;
- font-family: "Red Hat Display", sans-serif;
- font-optical-sizing: auto;
- font-weight: 3;
- font-style: normal;
-}  
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* body div  */
+  .B-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3;
+    font-style: normal;
+  }
+}
+
 /*  */
 
 /*  */
-h1{
+h1 {
   text-align: center;
-  
+
 }
+
 /*  */
 
 /* computer images */
-.C-img{
+.C-img {
   width: 100%;
-}  
- /*  */ 
- 
+}
+
+/*  */
+
+/* company logo starts.... */
+.companyLogo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 60px 20px 10px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+/* company logo ends.... */
+
+
 /* div for ios download starts.. */
-.Dios{
- background-color: hsl(171, 66%, 44%);
- color: white;
- width: 80%;
- padding: 15px;
- margin: 10px 0px;
- border: 0px;
- border-radius: 25px 25px 25px 25px;
- box-shadow: inset hsl(224, 23%, 55%); 
- box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2); 
- text-align: center;            
+.Dios {
+  background-color: hsl(171, 66%, 44%);
+  color: white;
+  width: 80%;
+  padding: 15px;
+  margin: 10px 0px;
+  border: 0px;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: inset hsl(224, 23%, 55%);
+  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .Dios:hover {
   background-color: hsl(165, 60%, 38%);
 }
-/*  div for ios download ends */
 
+/*  div for ios download ends */
 
 
 
 /* div for mac download starts... */
 
-.Dmac{
- background-color: hsl(233, 100%, 69%);
- color: white;
- width: 80%;
- padding: 15px;
- margin: 10px 0px;
- border: 0px;
- border-radius: 25px 25px 25px 25px;
- box-shadow: inset hsl(224, 23%, 55%); 
- box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2); 
- text-align: center;         
+.Dmac {
+  background-color: hsl(233, 100%, 69%);
+  color: white;
+  width: 80%;
+  padding: 15px;
+  margin: 10px 0px;
+  border: 0px;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: inset hsl(224, 23%, 55%);
+  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .Dmac:hover {
   background-color: hsl(244, 111%, 80%);
 }
+
 /*  div for mac download ends*/
 
+/* div for Dmac and Dios starts.....*/
+.download {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20%;
+}
+
+/* div for Dmac and Dios ends.....*/
+
+/* other info starts .....*/
+.otherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.otherInfo>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*  other info ends....*/
 
 /* footer */
 
-footer{
- background-color: ghostwhite;
- text-decoration: none;
+footer {
+  background-color: ghostwhite;
+  text-decoration: none;
 }
 
-.F-info > img{
+.f-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.f-img>img {
   width: 50px;
   margin: 20px;
 }
 
-.F-info{
- display: flex;
- flex-direction: column; 
- align-items: center;  
- justify-content: space-evenly;
+.F-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.F-logo{
- display: flex;
- align-items: center;
- flex-direction: row; 
- justify-content: space-evenly;
+.F-info>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.F-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* footer ends ...   */
 
+
+/*.............. DESKTOP VERSION STARTS........*/
+
+@media only screen and (min-width: 768px) {
+
+  /* body div  */
+  .B-div {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3;
+    font-style: normal;
+    text-align: center;
+  }
+
+  /*  */
+
+  /* div for Dmac and Dios desktop starts.....*/
+  .download {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 10%;
+    gap: 20px;
+  }
+
+  /* div for Dmac and Dios desktop version ends.....*/
+
+  /* other info starts..... */
+  .otherInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+  }
+
+  /* other info ends..... */
+
+
+  /* computer starts..... */
+  .computer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  /* computer ends..... */
+
+
+  /* computer images */
+  .C-img {
+    width: 48%;
+  }
+
+  /*  */
+
+  /* company logo starts.... */
+  .companyLogo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    justify-content: space-evenly;
+
+  }
+
+
+
+  /* company logo ends.... */
+
+  /* footer */
+
+  footer {
+    background-color: rgb(233, 232, 232);
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  footer>img {
+    width: 50px;
+    margin: 20px;
+  }
+
+  .F-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .F-info>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .F-info>.F-infoL{
+    align-self: flex-start;
+  }
+
+  .F-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* footer ends ...   */
+
+
+    }
